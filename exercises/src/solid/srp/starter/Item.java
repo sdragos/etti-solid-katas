@@ -1,0 +1,17 @@
+package solid.srp.starter;
+
+public class Item {
+    private final String name;
+    private final double unitPrice;
+    private final int quantity;
+
+    public Item(String name, double unitPrice, int quantity) {
+        this.name = name;
+        this.unitPrice = unitPrice;
+        this.quantity = quantity;
+    }
+
+    public String getName() { return name; }
+    public double getUnitPrice() { return unitPrice; }
+    public int getQuantity() { return quantity; }
+}
