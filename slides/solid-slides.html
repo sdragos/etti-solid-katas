@@ -438,9 +438,7 @@ database technology. You can't test it without a real MySQL instance.</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">OrderRepository</span> { <span class="hljs-keyword">void</span> <span class="hljs-title function_">save</span><span class="hljs-params">(String order)</span>; }
 
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySqlOrderRepository</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">OrderRepository</span> { <span class="hljs-comment">/* real DB */</span> }
-
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">InMemoryOrderRepository</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">OrderRepository</span> { <span class="hljs-comment">/* for tests */</span> }
-
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderService</span> {
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> OrderRepository repository;
 

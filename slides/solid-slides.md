@@ -467,9 +467,7 @@ database technology. You can't test it without a real MySQL instance.
 interface OrderRepository { void save(String order); }
 
 class MySqlOrderRepository implements OrderRepository { /* real DB */ }
-
 class InMemoryOrderRepository implements OrderRepository { /* for tests */ }
-
 class OrderService {
     private final OrderRepository repository;
 
